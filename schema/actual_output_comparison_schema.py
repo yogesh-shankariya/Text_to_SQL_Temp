@@ -19,5 +19,5 @@ class OutputComparisonEvaluation(BaseModel):
     actual_output_reason: str = Field(
         ...,
         min_length=1,
-        description="Required. Reason for why the actual output is match, partial_match, not_match, or unclear against the silver output."
+        description="Required. Short non-empty reason for why the actual output is match, partial_match, not_match, or unclear against the silver output."
     )

@@ -19,5 +19,5 @@ class SQLComparisonEvaluation(BaseModel):
     sql_reason: str = Field(
         ...,
         min_length=1,
-        description="Required. Reason for why the actual SQL is match, partial_match, not_match, or unclear against the silver SQL."
+        description="Required. Short non-empty reason for why the actual SQL is match, partial_match, not_match, or unclear against the silver SQL."
     )
